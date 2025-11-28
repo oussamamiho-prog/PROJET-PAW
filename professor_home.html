@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Professor Home - Attendance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="professor-page">
+<div class="page">s
+    <div class="layout">
+        <header class="topbar">
+            <h1 class="topbar-title">Professor Dashboard</h1>
+            <span class="topbar-subtitle">Sessions per course</span>
+        </header>
+
+        <main class="content">
+            <section class="card">
+                <div class="card-header">
+                    <h2>My Courses & Sessions</h2>
+                    <a href="professor_summary.html" class="link">View attendance summary</a>
+                    <div class="card-actions">
+                        <input type="text" id="searchCourse" placeholder="Search course...">
+                        <button id="btnNewSession" class="btn-primary small">+ New Session</button>
+                    </div>
+                </div>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Group</th>
+                        <th>Total Sessions</th>
+                        <th>Last Session</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody id="courseTableBody">
+                    <!-- rows added by jQuery -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Summary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="professor-page">
+<div class="page">
+    <div class="layout">
+        <header class="topbar">
+            <h1 class="topbar-title">Attendance Summary</h1>
+            <span class="topbar-subtitle">Per course / per group</span>
+        </header>
+
+        <main class="content">
+            <section class="card">
+                <div class="card-header">
+                    <h2>Overview</h2>
+                    <div class="card-actions">
+                        <select id="summaryCourse">
+                            <option>Web Programming - G1</option>
+                            <option>Databases - G2</option>
+                            <option>Networks - G1</option>
+                        </select>
+                    </div>
+                </div>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Student</th>
+                        <th>Matricule</th>
+                        <th>Sessions Present</th>
+                        <th>Sessions Total</th>
+                        <th>Attendance %</th>
+                    </tr>
+                    </thead>
+                    <tbody id="summaryBody">
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

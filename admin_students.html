@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Student List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="professor-page">
+<div class="page">
+    <div class="layout">
+        <header class="topbar">
+            <h1 class="topbar-title">Student Management</h1>
+            <span class="topbar-subtitle">Import / export · add / remove</span>
+        </header>
+
+        <main class="content">
+            <section class="card">
+                <div class="card-header">
+                    <h2>Student list</h2>
+                    <div class="card-actions">
+                        <button id="btnImport" class="btn-secondary small">Import Excel</button>
+                        <button id="btnExport" class="btn-primary small">Export Excel</button>
+                    </div>
+                </div>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Matricule</th>
+                        <th>Name</th>
+                        <th>Group</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody id="adminStudentsBody"></tbody>
+                </table>
+
+                <h3 style="margin-top:16px;font-size:14px;">Add student</h3>
+                <div class="form-group">
+                    <label for="addMatricule">Matricule</label>
+                    <input type="text" id="addMatricule">
+                </div>
+                <div class="form-group">
+                    <label for="addName">Name</label>
+                    <input type="text" id="addName">
+                </div>
+                <div class="form-group">
+                    <label for="addGroup">Group</label>
+                    <input type="text" id="addGroup">
+                </div>
+                <button id="btnAddStudent" class="btn-primary">Add</button>
+                <p id="adminMsg" class="error-msg" style="display:none;"></p>
+            </section>
+        </main>
+    </div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

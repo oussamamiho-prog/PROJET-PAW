@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Home - Attendance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="professor-page">
+<div class="page">
+    <div class="layout">
+        <header class="topbar">
+            <h1 class="topbar-title">My Courses</h1>
+            <span class="topbar-subtitle">Student dashboard</span>
+        </header>
+
+        <main class="content">
+            <section class="card">
+                <div class="card-header">
+                    <h2>Enrolled Courses</h2>
+                </div>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Group</th>
+                        <th>Attendance %</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody id="studentCoursesBody"></tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

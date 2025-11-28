@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Attendance - Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="professor-page">
+<div class="page">
+    <div class="layout">
+        <header class="topbar">
+            <h1 class="topbar-title">Web Programming - G1</h1>
+            <span class="topbar-subtitle">My attendance & justifications</span>
+        </header>
+
+        <main class="content">
+            <section class="card">
+                <div class="card-header">
+                    <h2>Attendance history</h2>
+                </div>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Justification</th>
+                    </tr>
+                    </thead>
+                    <tbody id="studentHistoryBody"></tbody>
+                </table>
+
+                <h3 style="margin-top:16px;font-size:14px;">Submit justification</h3>
+                <div class="form-group">
+                    <label for="jusDate">Session date</label>
+                    <input type="date" id="jusDate">
+                </div>
+                <div class="form-group">
+                    <label for="jusReason">Reason</label>
+                    <input type="text" id="jusReason" placeholder="Short explanation">
+                </div>
+                <div class="form-group">
+                    <label for="jusFile">Attach proof (optional)</label>
+                    <input type="file" id="jusFile">
+                </div>
+                <button id="btnSendJustif" class="btn-primary">Send justification</button>
+                <p id="jusMsg" class="error-msg" style="display:none;"></p>
+            </section>
+        </main>
+    </div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

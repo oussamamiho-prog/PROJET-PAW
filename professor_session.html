@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session - Mark Attendance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="professor-page">
+<div class="page">
+    <div class="layout">
+        <header class="topbar">
+            <h1 class="topbar-title">Session: Web Programming</h1>
+            <span class="topbar-subtitle">Group G1 · 28/11/2025 · 10:00–11:30</span>
+        </header>
+
+        <main class="content">
+            <section class="card">
+                <div class="card-header">
+                    <h2>Mark Attendance</h2>
+                    <div class="card-actions">
+                        <button id="btnMarkAll" class="btn-primary small">Mark all present</button>
+                        <button id="btnClearAll" class="btn-secondary small">Clear all</button>
+                    </div>
+                </div>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Matricule</th>
+                        <th>Student Name</th>
+                        <th>Present</th>
+                        <th>Behavior</th>
+                    </tr>
+                    </thead>
+                    <tbody id="sessionStudentsBody">
+                    </tbody>
+                </table>
+
+                <button id="btnSaveSession" class="btn-primary" style="margin-top:14px;">Save attendance</button>
+                <p id="sessionMsg" class="error-msg" style="display:none;"></p>
+            </section>
+        </main>
+    </div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

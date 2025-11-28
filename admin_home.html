@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Home - Attendance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="professor-page">
+<div class="page">
+    <div class="layout">
+        <header class="topbar">
+            <h1 class="topbar-title">Admin Dashboard</h1>
+            <span class="topbar-subtitle">System overview</span>
+        </header>
+
+        <main class="content">
+            <section class="card">
+                <div class="card-header">
+                    <h2>Quick stats</h2>
+                </div>
+
+                <div class="admin-cards">
+                    <div class="mini-card">
+                        <span class="label">Total students</span>
+                        <span class="value" id="statStudents">0</span>
+                    </div>
+                    <div class="mini-card">
+                        <span class="label">Total professors</span>
+                        <span class="value" id="statProfessors">0</span>
+                    </div>
+                    <div class="mini-card">
+                        <span class="label">Total courses</span>
+                        <span class="value" id="statCourses">0</span>
+                    </div>
+                </div>
+
+                <div style="margin-top:16px;">
+                    <a href="admin_stats.html" class="link">View statistics</a> ·
+                    <a href="admin_students.html" class="link">Manage students</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
